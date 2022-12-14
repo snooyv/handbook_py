@@ -32,3 +32,10 @@
 #         if i * i > num:
 #             Flag = True
 #             break
+
+# O Зайка - 4 //////////
+
+num_landscape = input()
+
+count = 0
+
