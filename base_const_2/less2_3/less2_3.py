@@ -35,7 +35,19 @@
 
 # O Зайка - 4 //////////
 
-num_landscape = input()
+# num_landscape = int(input())
+#
+# search = "зайка"
+#
+# count = 0
+#
+# while num_landscape > 0:
+#     num_landscape -= 1
+#     string = input().split(" ")
+#     if search in string:
+#         count += 1
+# print(count)
 
-count = 0
+
+# P Полиндром
 
