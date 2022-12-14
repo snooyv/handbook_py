@@ -20,5 +20,28 @@
 
 # strng = input()
 
-for i in input():
-    print(i)
+# for i in input():
+#     print(i)
+
+
+# C Анонс новости ///////
+
+
+# lenght_head = int(input())
+#
+# value_head = int(input())
+#
+# head = []
+#
+# while value_head > 0:
+#     head.append(input())
+#     value_head -= 1
+# new_str = head[0].ljust(lenght_head)
+# print(new_str)
+# for i in head:
+#     print(i.ljust(lenght_head))
+
+str = "Начался саммит по мировому климату"
+
+result = str[:23] + "..."
+print(result)
