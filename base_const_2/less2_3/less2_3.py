@@ -51,3 +51,15 @@
 
 # P Полиндром
 
+# num = input()
+#
+# index = len(num)
+# start = 0
+# end = 0
+# if index % 2 == 0:
+#     i = index / 2
+#     start = num[:i]
+#     end = num[:i:-1]
+#
+# print(start)
+# print(end)
