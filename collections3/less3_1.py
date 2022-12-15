@@ -27,21 +27,19 @@
 # C Анонс новости ///////
 
 
-# lenght_head = int(input())
-#
-# value_head = int(input())
-#
-# head = []
-#
-# while value_head > 0:
-#     head.append(input())
-#     value_head -= 1
-# new_str = head[0].ljust(lenght_head)
-# print(new_str)
-# for i in head:
-#     print(i.ljust(lenght_head))
+length_head = int(input())
 
-str = "Начался саммит по мировому климату"
+value_head = int(input())
 
-result = str[:23] + "..."
-print(result)
+head = []
+char = "..."
+
+while value_head > 0:
+    head.append(input())
+    value_head -= 1
+
+for i in head:
+    if len(i) < length_head - len(char):
+        print(i)
+        continue
+    print(i[:22] + char)
