@@ -27,19 +27,37 @@
 # C Анонс новости ///////
 
 
-length_head = int(input())
+# length_head = int(input())
+#
+# value_head = int(input())
+#
+# head = []
+# char = "..."
+#
+# while value_head > 0:
+#     head.append(input())
+#     value_head -= 1
+#
+# for i in head:
+#     if len(i) < length_head - len(char):
+#         print(i)
+#         continue
+#     print(i[:22] + char)
 
-value_head = int(input())
 
-head = []
-char = "..."
+# D Очистка данных /////////
 
-while value_head > 0:
-    head.append(input())
-    value_head -= 1
+start_char = "##"
+end_char = "@@@"
+data = []
 
-for i in head:
-    if len(i) < length_head - len(char):
-        print(i)
+while (string := input()) != "":
+    if string.endswith(end_char):
         continue
-    print(i[:22] + char)
+    elif string.startswith(start_char):
+        data.append(string[2:])
+    else:
+        data.append(string)
+
+for i in data:
+    print(i)
