@@ -65,7 +65,13 @@
 
 # E А роза упала на лапу Азоро 4.0
 
-string = input()
+# string = input()
+#
+# print("YES") if string == string[::-1] else print("NO")
 
-print("YES") if string == string[::-1] else print("NO")
 
+# G А и Б сидели на трубе
+
+num = sum([int(x) for x in input().split()])
+
+print(num)
