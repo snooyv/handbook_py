@@ -72,6 +72,22 @@
 
 # G А и Б сидели на трубе
 
-num = sum([int(x) for x in input().split()])
+# num = sum([int(x) for x in input().split()])
+#
+# print(num)
 
-print(num)
+
+# H Зайка 7
+
+volume = int(input())
+
+data = []
+search = "зайка"
+
+for i in range(volume):
+    string = input()
+    length = string.find(search)
+    data.append(length + 1) if length != -1 else data.append("Заек нет =(")
+
+for i in data:
+    print(i)
