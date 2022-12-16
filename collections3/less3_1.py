@@ -79,15 +79,33 @@
 
 # H Зайка 7
 
-volume = int(input())
+# volume = int(input())
+#
+# data = []
+# search = "зайка"
+#
+# for i in range(volume):
+#     string = input()
+#     length = string.find(search)
+#     data.append(length + 1) if length != -1 else data.append("Заек нет =(")
+#
+# for i in data:
+#     print(i)
 
+
+
+# I Без коментариев ///////
+
+char = "#"
 data = []
-search = "зайка"
 
-for i in range(volume):
-    string = input()
-    length = string.find(search)
-    data.append(length + 1) if length != -1 else data.append("Заек нет =(")
+while (string := input()) != "":
+    if string.startswith(char):
+        continue
+    if (index := string.find(char)) != -1:
+        data.append(string[:index])
+    else:
+        data.append(string)
 
 for i in data:
     print(i)
