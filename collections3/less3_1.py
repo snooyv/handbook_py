@@ -96,16 +96,26 @@
 
 # I Без коментариев ///////
 
-char = "#"
+# char = "#"
+# data = []
+#
+# while (string := input()) != "":
+#     if string.startswith(char):
+#         continue
+#     if (index := string.find(char)) != -1:
+#         data.append(string[:index])
+#     else:
+#         data.append(string)
+#
+# for i in data:
+#     print(i)
+
+
+
+# J  Частотный анализ на минималках ////////
+
+stop = "ФИНИШ"
+
 data = []
 
-while (string := input()) != "":
-    if string.startswith(char):
-        continue
-    if (index := string.find(char)) != -1:
-        data.append(string[:index])
-    else:
-        data.append(string)
-
-for i in data:
-    print(i)
+while (string := input().lower()) != stop:
