@@ -117,13 +117,12 @@
 from collections import Counter
 
 stop = "финиш"
-data = []
+new_data = []
 
 while (string := input().lower()) != stop:
-    data.append(''.join(string))
-print(data)
-#cnt = dict(Counter(''.join(data)).most_common(1))
-cnt = dict(Counter(data))
-print(cnt)
+    new_data.extend(string.split())
+
+cnt = dict(Counter(''.join(new_data)).most_common(1))
+
 for key in cnt.keys():
     print(key)
