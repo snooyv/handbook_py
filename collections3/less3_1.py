@@ -114,8 +114,16 @@
 
 # J  Частотный анализ на минималках ////////
 
-stop = "ФИНИШ"
+from collections import Counter
 
+stop = "финиш"
 data = []
 
 while (string := input().lower()) != stop:
+    data.append(''.join(string))
+print(data)
+#cnt = dict(Counter(''.join(data)).most_common(1))
+cnt = dict(Counter(data))
+print(cnt)
+for key in cnt.keys():
+    print(key)
