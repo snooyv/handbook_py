@@ -114,15 +114,30 @@
 
 # J  Частотный анализ на минималках ////////
 
-from collections import Counter
+# from collections import Counter
+#
+# stop = "финиш"
+# new_data = []
+#
+# while (string := input().lower()) != stop:
+#     new_data.extend(string.split())
+#
+# cnt = dict(Counter(''.join(new_data)).most_common(1))
+#
+# for key in cnt.keys():
+#     print(key)
 
-stop = "финиш"
-new_data = []
 
-while (string := input().lower()) != stop:
-    new_data.extend(string.split())
+# K Найдется все
 
-cnt = dict(Counter(''.join(new_data)).most_common(1))
+vol_page = int(input())
 
-for key in cnt.keys():
-    print(key)
+data = []
+for i in range(vol_page):
+    headings = input()
+    data.append(headings)
+
+head = input().lower()
+
+
+
