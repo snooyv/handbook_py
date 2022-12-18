@@ -93,7 +93,6 @@
 #     print(i)
 
 
-
 # I Без коментариев ///////
 
 # char = "#"
@@ -109,7 +108,6 @@
 #
 # for i in data:
 #     print(i)
-
 
 
 # J  Частотный анализ на минималках ////////
@@ -133,11 +131,13 @@
 vol_page = int(input())
 
 data = []
+
 for i in range(vol_page):
-    headings = input()
-    data.append(headings)
+    data.append(input())
 
-head = input().lower()
+search = input()
 
-
+for i in data:
+    if search in i.lower():
+        print(i)
 
