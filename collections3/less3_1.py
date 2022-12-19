@@ -127,17 +127,36 @@
 
 
 # K Найдется все
+# import itertools
+#
+# vol_page = int(input())
 
-vol_page = int(input())
+# data = []
+#
+# for i in range(vol_page):
+#     data.append(input())
+#
+# search = input()
+#
+# for i in data:
+#     if i.lower().find(search) != -1:
+#         # new_data = re.split(r'\W+', i.lower())
+#         # print(new_data)
+#         # if search in new_data:
+#         print(i)
 
-data = []
 
-for i in range(vol_page):
-    data.append(input())
+# L Меню питания
+#import itertools
+from itertools import cycle
 
-search = input()
+porridge_list = ["Манная", "Гречневая", "Пшённая", "Овсяная", "Рисовая"]
 
-for i in data:
-    if search in i.lower():
-        print(i)
+volum_day = int(input())
+
+
+for i, j in enumerate(cycle(porridge_list)):
+    print(j)
+    if i >= volum_day - 1:
+        break
 
