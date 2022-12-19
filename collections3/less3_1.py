@@ -147,16 +147,59 @@
 
 
 # L Меню питания
-#import itertools
-from itertools import cycle
+# import itertools
+# from itertools import cycle
+#
+# porridge_list = ["Манная", "Гречневая", "Пшённая", "Овсяная", "Рисовая"]
+#
+# volum_day = int(input())
+#
+#
+# for i, j in enumerate(cycle(porridge_list)):
+#     print(j)
+#     if i >= volum_day - 1:
+#         break
 
-porridge_list = ["Манная", "Гречневая", "Пшённая", "Овсяная", "Рисовая"]
 
-volum_day = int(input())
+# М Массовое возведение в степень
+
+# Индийский способ возведения
+
+# d = int(input())
+# s = int(input())
+# p = 1
+# b = bin(s)[2:]
+# for x in b:
+#     p *=p
+#     if x == '1':
+#         p *= d
+#
+# print(p)
+
+#
 
 
-for i, j in enumerate(cycle(porridge_list)):
-    print(j)
-    if i >= volum_day - 1:
-        break
+# num_volume = int(input())
+#
+# num_list = []
+#
+# for i in range(num_volume):
+#     num_list.append(int(input()))
+#
+# num_pow = int(input())
 
+a = int(input())
+n = int(input())
+
+res = 1
+
+mult = a
+
+while n != 0:
+    if n % 2 == 1:
+        res *= mult
+    mult = mult * mult
+    n = n / 2
+
+
+print(res)
